@@ -12,7 +12,7 @@ public class LongestPalindromeSubString {
         }
         return flag;
     }
-//    暴法
+//    暴力法
     public String longestPalindrome1(String s) {
         if (s.length() == 0 || s.length() == 1){
             return s;
