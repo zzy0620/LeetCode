@@ -32,8 +32,6 @@ public class ThreeNumSumClosest {
     }
 
     public static void main(String[] args) {
-//        System.out.println(Math.abs(-6-(-1)));
-//        System.out.println(Math.abs(Integer.MAX_VALUE));
         System.out.println(new ThreeNumSumClosest().threeSumClosest(new int[]{1,1,1,0},-100));
     }
 }
