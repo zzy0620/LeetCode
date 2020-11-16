@@ -3,6 +3,10 @@ package scu.edu.cn.list;
 import java.util.ArrayList;
 import java.util.List;
 
+//
+//给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。
+//
+//        你不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
 public class SwapListNode {
     public ListNode swapPairs(ListNode head) {
         ListNode listNode = head;
