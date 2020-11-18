@@ -49,10 +49,34 @@ public class DeleteDuplicates {
         return ++i;
     }
 
+    public int removeDuplicates3(int[] nums) {
+        if (nums ==null || nums.length == 0){
+            return 0;
+        }
+        int curr=0;
+        int next = 0;
+        Arrays.sort(nums);
+        while (next < nums.length-1) {
+            while (nums[next] != nums[next+1] ){
+                next++;
+                nums[++curr] = nums[next];
+                if (next == nums.length-1){
+                    break;
+                }
+            }
+            if (next == nums.length-1){
+                break;
+            }
+            next++;
+        }
+        return ++curr;
+    }
+
 
     public static void main(String[] args) {
-        int[] test = new int[]{1,2,3,4};
+        int[] test = new int[]{1,1,1,2,3,3,4};
 //        System.out.println(new DeleteDuplicates().removeDuplicates(test));
-        System.out.println(new DeleteDuplicates().removeDuplicates2(test));
+//        System.out.println(new DeleteDuplicates().removeDuplicates2(test));
+        System.out.println(new DeleteDuplicates().removeDuplicates3(test));
     }
 }
