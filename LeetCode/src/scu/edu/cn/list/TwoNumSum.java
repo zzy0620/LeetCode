@@ -3,11 +3,11 @@ package scu.edu.cn.list;
 import java.util.ArrayList;
 import java.util.List;
 
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
-}
+//class ListNode {
+//    int val;
+//    ListNode next;
+//    ListNode(int x) { val = x; }
+//}
 
 public class TwoNumSum {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
