@@ -51,7 +51,6 @@ public class FindSEInArr {
 
     public static void main(String[] args) {
         int[] test = new int[]{5,7,7,8,8,10};
-        int[] test = new int[]{5,7,7,8,8,10};
         System.out.println(Arrays.toString(new FindSEInArr().searchRange(test, 8)));
     }
 }

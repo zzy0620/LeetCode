@@ -29,6 +29,7 @@ public class TwoNumSum {
         int l2Size = list2.size();
         List<Integer> temp = new ArrayList<>();
         int jinwei = 0;
+
         if (l1Size>=l2Size){
             for (int i =0;i<l1Size;i++){
                 if (i<=l2Size-1){
